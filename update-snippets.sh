@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Repository location
+REPO_DIR="$HOME/Sites/cursor-snippets"
+BACKUP_DIR="$HOME/Sites/cursor-snippets-backups"
+
 # Function to validate JSON files
 validate_json() {
     local file=$1
@@ -12,21 +16,21 @@ validate_json() {
 
 # Function to create backup
 create_backup() {
-    local backup_dir="$HOME/cursor-snippets-backups/$(date +%Y%m%d_%H%M%S)"
+    local backup_dir="$BACKUP_DIR/$(date +%Y%m%d_%H%M%S)"
     echo "Creating backup in $backup_dir..."
     mkdir -p "$backup_dir"
     cp ~/Library/Application\ Support/Cursor/User/snippets/*.json "$backup_dir/" 2>/dev/null
     if [ $? -eq 0 ]; then
         echo "Backup created successfully"
         # Keep only the last 5 backups
-        ls -t "$HOME/cursor-snippets-backups" | tail -n +6 | xargs -I {} rm -rf "$HOME/cursor-snippets-backups/{}" 2>/dev/null
+        ls -t "$BACKUP_DIR" | tail -n +6 | xargs -I {} rm -rf "$BACKUP_DIR/{}" 2>/dev/null
     else
         echo "Warning: No existing snippets to backup"
     fi
 }
 
 # Navigate to the snippets repository
-cd "$(dirname "$0")"
+cd "$REPO_DIR"
 
 # Create backup of existing snippets
 create_backup
@@ -52,4 +56,4 @@ cp *.json ~/Library/Application\ Support/Cursor/User/snippets/
 
 echo "Done! Cursor snippets have been updated."
 echo "Note: You may need to restart Cursor for changes to take effect."
-echo "A backup of your previous snippets was created in ~/cursor-snippets-backups" 
+echo "A backup of your previous snippets was created in $BACKUP_DIR" 
