@@ -32,5 +32,18 @@
 			"\t",
 			"}"
 		]
+	},
+
+	"Button Component": {
+		"prefix": "button",
+		"description": "Add a Guardian button component",
+		"body": [
+			"<Button",
+			"\tlabel={\"Test button\"}",
+			"\tcolour={\"#ffe500\"}",
+			"\tbackground={\"#121212\"}",
+			"\tonClick={() => {console.log(`Clicked`)}}",
+			"/>"
+		]
 	}
 }
