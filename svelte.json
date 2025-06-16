@@ -331,5 +331,116 @@
 			"}"
 		],
 		"scope": "*"
+	},
+
+	"svelte-component": {
+		"prefix": "svelte-component",
+		"body": [
+			"<script>",
+			"\tlet { ${1:prop} } = $props();",
+			"",
+			"\tlet ${2:state} = $state(${3:initialValue});",
+			"",
+			"\t$effect(() => {",
+			"\t\t${4:}",
+			"\t});",
+			"</script>",
+			"",
+			"<div class='${5:component-name}'>",
+			"\t${6:}",
+			"</div>",
+			"",
+			"<style lang='scss'>",
+			"\t.${5:component-name} {",
+			"\t\t${7:}",
+			"\t}",
+			"</style>"
+		],
+		"description": "Create a new Svelte component with Svelte 5 features",
+		"scope": "svelte"
+	},
+
+	"svelte-store": {
+		"prefix": "svelte-store",
+		"body": [
+			"import { writable } from 'svelte/store';",
+			"",
+			"export const ${1:storeName} = writable(${2:initialValue});",
+			"",
+			"export function ${3:updateStore}(value) {",
+			"\t${1:storeName}.set(value);",
+			"}"
+		],
+		"description": "Create a new Svelte store",
+		"scope": "javascript"
+	},
+
+	"svelte-action": {
+		"prefix": "svelte-action",
+		"body": [
+			"export function ${1:actionName}(node, ${2:params}) {",
+			"\t${3:}",
+			"",
+			"\treturn {",
+			"\t\tdestroy() {",
+			"\t\t\t${4:}",
+			"\t\t}",
+			"\t\tupdate(${5:newParams}) {",
+			"\t\t\t${6:}",
+			"\t\t}",
+			"\t};",
+			"}"
+		],
+		"description": "Create a new Svelte action",
+		"scope": "javascript"
+	},
+
+	"svelte-transition": {
+		"prefix": "svelte-transition",
+		"body": [
+			"<script>",
+			"\timport { ${1:transition} } from 'svelte/transition';",
+			"</script>",
+			"",
+			"{#if ${2:condition}}",
+			"\t<div transition:${1:transition}={{",
+			"\t\tduration: ${3:300},",
+			"\t\tdelay: ${4:0},",
+			"\t\t${5:}",
+			"\t}}>",
+			"\t\t${6:}",
+			"\t</div>",
+			"{/if}"
+		],
+		"description": "Add a Svelte transition to an element",
+		"scope": "svelte"
+	},
+
+	"svelte-animation": {
+		"prefix": "svelte-animation",
+		"body": [
+			"<script>",
+			"\timport { ${1:animation} } from 'svelte/animate';",
+			"</script>",
+			"",
+			"{#each ${2:items} as ${3:item} (${4:item.id})}",
+			"\t<div animate:${1:animation}={{",
+			"\t\tduration: ${5:300},",
+			"\t\tdelay: ${6:0},",
+			"\t\t${7:}",
+			"\t}}>",
+			"\t\t${8:}",
+			"\t</div>",
+			"{/each}"
+		],
+		"description": "Add a Svelte animation to an element",
+		"scope": "svelte"
+	},
+
+	"mq": {
+		"prefix": "mq",
+		"body": ["@media (min-width: ${1:breakpoint}) {", "\t${2:}", "}"],
+		"description": "Add a media query",
+		"scope": "scss"
 	}
 }
