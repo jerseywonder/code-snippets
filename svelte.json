@@ -1,5 +1,4 @@
 {
-	// Example snippet for checking if a value is present in another array or string
 	"Checks if a value is present in another array or string": {
 		"prefix": "contains",
 		"body": [
@@ -23,7 +22,6 @@
 		"scope": "javascript"
 	},
 
-	// Example snippet for summing property values in an array of objects
 	"Sums the values of a specified property in an array of objects": {
 		"prefix": "sum",
 		"body": [
@@ -41,7 +39,6 @@
 		"scope": "javascript"
 	},
 
-	// Example snippet for shuffling an array
 	"Shuffles an array in place": {
 		"prefix": "shuffle",
 		"body": [
@@ -113,16 +110,6 @@
 			"            window.frameElement.height = target.offsetHeight;",
 			"        });",
 			"    }",
-			"}"
-		],
-		"scope": "javascript"
-	},
-
-	"Get JSON from URL": {
-		"prefix": "getJson",
-		"body": [
-			"function getJson(url) {",
-			"  return fetch(\`\${url}\`).then(r => r.json());",
 			"}"
 		],
 		"scope": "javascript"
