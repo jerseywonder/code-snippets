@@ -31,8 +31,6 @@
 			"@include mq($from: wide) {",
 			"\t",
 			"}"
-		],
-		"scope": "javascript,typescript,css,svelte"
+		]
 	}
-
 }

@@ -19,7 +19,7 @@
 			"    return a.includes(b);",
 			"}"
 		],
-		"scope": "javascript"
+		"description": "Checks if a value or any value in an array is present in another array or string."
 	},
 
 	"Sums the values of a specified property in an array of objects": {

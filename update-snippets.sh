@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# cd ~/Library/Application\ Support/Cursor/User/snippets/
+
 # Repository location
 REPO_DIR="$HOME/Sites/cursor-snippets"
 BACKUP_DIR="$HOME/Sites/cursor-snippets-backups"
