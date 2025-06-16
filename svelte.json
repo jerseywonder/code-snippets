@@ -34,9 +34,9 @@
 		]
 	},
 
-	"Button Component": {
+	"Add Guardian button component to markup": {
 		"prefix": "button",
-		"description": "Add a Guardian button component",
+		"description": "Add Guardian button component markup",
 		"body": [
 			"<Button",
 			"\tlabel={\"Test button\"}",
@@ -45,5 +45,14 @@
 			"\tonClick={() => {console.log(`Clicked`)}}",
 			"/>"
 		]
+	},
+
+	"Import Guardian button component in script": {
+		"prefix": "button",
+		"description": "Import Guardian button component inside script",
+		"body": [
+			"import Button from \"$lib/components/guardian/Button.svelte\";"
+		]
 	}
+
 }
