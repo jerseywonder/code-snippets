@@ -290,7 +290,7 @@
 		"prefix": "button",
 		"description": "Import Guardian button component inside script",
 		"body": [
-			"import Button from \"$lib/components/guardian/Button.svelte\";"
+			"import Button from \"\\$lib/components/guardian/Button.svelte\";"
 		]
 	},
 
@@ -298,7 +298,7 @@
 		"prefix": "button",
 		"description": "Import Guardian switch component inside script",
 		"body": [
-			"import Switch from \"$lib/components/guardian/Switch.svelte\";"
+			"import Switch from \"\\$lib/components/guardian/Switch.svelte\";"
 		]
 	},
 
@@ -306,7 +306,7 @@
 		"prefix": "resizer",
 		"description": "Import Guardian resizer component inside script",
 		"body": [
-			"import Resizer from \"$lib/components/guardian/Resizer.svelte\";"
+			"import Resizer from \"\\$lib/components/guardian/Resizer.svelte\";"
 		]
 	}
 
