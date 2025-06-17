@@ -59,5 +59,19 @@
 			"\t}}",
 			"/>"
 		]
+	},
+
+	"Add Guardian audio player component to markup": {
+		"prefix": "audio",
+		"description": "Add Guardian audio player component markup",
+		"body": [
+			"<AudioPlayer",
+				"\tsrt={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza/hamada-voice-canada.srt\"}",
+				"\tsrc={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza/hamada-voice-canada.mp3\"}",
+				"\tpic={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza/hamada.jpg\"}",
+				"\ttrack={\"Text that appears before the audio plays\"}",
+			"/>"
+		]
 	}
+
 }
