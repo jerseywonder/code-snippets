@@ -17,7 +17,7 @@
 		"prefix": "button",
 		"description": "Add Guardian button component markup",
 		"body": [
-			"<Switch"
+			"<Switch",
 			"\tlabel1={\"off\"}",
 			"\tlabel2={\"on\"}",
 			"\ton:change={() => {console.log(\"Switch changed\")}}",
