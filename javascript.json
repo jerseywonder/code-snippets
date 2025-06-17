@@ -284,5 +284,14 @@
 			"}"
 		],
 		"scope": "javascript"
+	},
+
+	"Import Guardian button component in script": {
+		"prefix": "button",
+		"description": "Import Guardian button component inside script",
+		"body": [
+			"import Button from \"$lib/components/guardian/Button.svelte\";"
+		]
 	}
+
 }
