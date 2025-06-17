@@ -33,6 +33,31 @@
 			"\tatomName={\"#gv-atom\"}",
 			"/>"
 		]
-	}
+	},
 
+	"Add Guardian search component to markup": {
+		"prefix": "search",
+		"description": "Add Guardian search component markup",
+		"body": [
+			"<SearchInput",
+			"\tplaceholder=\"Search for something...\"",
+			"\t{inputValue}",
+			"\tonInputChange={(val) => {console.log(\"input changed\", val)}}",
+			"\tonSubmit={(val) => {console.log(\"on submit\", val)}}",
+			"\tonSelect={(val) => {console.log(\"on select\", val)}}",
+			"\tonClear={() => {console.log(\"on clear\")}}",
+			"\tonFocus={() => {console.log(\"input focused\")}}",
+			"\tstyles={{",
+			"\t\tsearchContainer: \"_searchContainer_1kj0x_1\",",
+			"\t\tinput: \"_input_1kj0x_5\",",
+			"\t\tsearchIcon: \"_searchIcon_1kj0x_27\",",
+			"\t\tclearButton: \"_clearButton_1kj0x_36\",",
+			"\t\tsuggestions: \"_suggestions_1kj0x_42\",",
+			"\t\tsuggestion: \"_suggestion_1kj0x_42\",",
+			"\t\tselected: \"_selected_6u92g_85\",",
+			"\t\thighlighted: \"_highlighted_1kj0x_77\"",
+			"\t}}",
+			"/>"
+		]
+	}
 }
