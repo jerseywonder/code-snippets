@@ -11,6 +11,6 @@
 			"\tonClick={() => {console.log(`Clicked`)}}",
 			"/>"
 		]
-	},
+	}
 
 }
