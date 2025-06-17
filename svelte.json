@@ -1,52 +1,5 @@
 {
 
-	"Media Query Mixins": {
-		"prefix": "mq",
-		"description": "Add default Guardian breakpoints to CSS",
-		"body": [
-			"@include mq($until: mobile) {",
-			"\t$0",
-			"}",
-			"",
-			"@include mq($from: mobile, $until: mobileLandscape) {",
-			"\t",
-			"}",
-			"",
-			"@include mq($from: mobileLandscape, $until: tablet) {",
-			"\t",
-			"}",
-			"",
-			"@include mq($from: tablet, $until: desktop) {",
-			"\t",
-			"}",
-			"",
-			"@include mq($from: desktop, $until: leftCol) {",
-			"\t",
-			"}",
-			"",
-			"@include mq($from: leftCol, $until: wide) {",
-			"\t",
-			"}",
-			"",
-			"@include mq($from: wide) {",
-			"\t",
-			"}"
-		]
-	},
-
-	"Add Guardian button component to markup": {
-		"prefix": "button",
-		"description": "Add Guardian button component markup",
-		"body": [
-			"<Button",
-			"\tlabel={\"Test button\"}",
-			"\tcolour={\"#ffe500\"}",
-			"\tbackground={\"#121212\"}",
-			"\tonClick={() => {console.log(`Clicked`)}}",
-			"/>"
-		]
-	},
-
 	"Import Guardian button component in script": {
 		"prefix": "button",
 		"description": "Import Guardian button component inside script",

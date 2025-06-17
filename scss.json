@@ -1,0 +1,35 @@
+{
+	"Media Query Mixins": {
+		"prefix": "mq",
+		"description": "Add default Guardian breakpoints to CSS",
+		"body": [
+			"@include mq($until: mobile) {",
+			"\t$0",
+			"}",
+			"",
+			"@include mq($from: mobile, $until: mobileLandscape) {",
+			"\t",
+			"}",
+			"",
+			"@include mq($from: mobileLandscape, $until: tablet) {",
+			"\t",
+			"}",
+			"",
+			"@include mq($from: tablet, $until: desktop) {",
+			"\t",
+			"}",
+			"",
+			"@include mq($from: desktop, $until: leftCol) {",
+			"\t",
+			"}",
+			"",
+			"@include mq($from: leftCol, $until: wide) {",
+			"\t",
+			"}",
+			"",
+			"@include mq($from: wide) {",
+			"\t",
+			"}"
+		]
+	}
+}
