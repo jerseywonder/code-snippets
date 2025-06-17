@@ -14,7 +14,7 @@
 	},
 
 	"Add Guardian switch component to markup": {
-		"prefix": "button",
+		"prefix": "switch",
 		"description": "Add Guardian button component markup",
 		"body": [
 			"<Switch",
