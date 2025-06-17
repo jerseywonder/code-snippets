@@ -23,5 +23,16 @@
 			"\ton:change={() => {console.log(\"Switch changed\")}}",
 			"/>"
 		]
+	},
+
+	"Add Guardian resizer component to markup": {
+		"prefix": "resizer",
+		"description": "Add Guardian resizer component markup",
+		"body": [
+			"<Resizer",
+			"\tatomName={\"#gv-atom\"}",
+			"/>"
+		]
 	}
+
 }

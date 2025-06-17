@@ -300,7 +300,14 @@
 		"body": [
 			"import Switch from \"$lib/components/guardian/Switch.svelte\";"
 		]
-	}
+	},
 
+	"Import Guardian resizer component in script": {
+		"prefix": "resizer",
+		"description": "Import Guardian resizer component inside script",
+		"body": [
+			"import Resizer from \"$lib/components/guardian/Resizer.svelte\";"
+		]
+	}
 
 }
