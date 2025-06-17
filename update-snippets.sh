@@ -56,6 +56,16 @@ done
 echo "Updating Cursor snippets..."
 cp *.json ~/Library/Application\ Support/Cursor/User/snippets/
 
+# Copy any files from Cursor directory back to repository
+echo "Syncing any new snippets from Cursor back to repository..."
+cp ~/Library/Application\ Support/Cursor/User/snippets/*.json "$REPO_DIR/" 2>/dev/null
+cp ~/Library/Application\ Support/Cursor/User/snippets/*.code-snippets "$REPO_DIR/" 2>/dev/null
+if [ $? -eq 0 ]; then
+    echo "Snippets synced back to repository"
+else
+    echo "No new snippets found in Cursor directory"
+fi
+
 echo "Done! Cursor snippets have been updated."
 echo "Note: You may need to restart Cursor for changes to take effect."
 echo "A backup of your previous snippets was created in $BACKUP_DIR" 
