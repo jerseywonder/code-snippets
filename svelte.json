@@ -72,6 +72,19 @@
 				"\ttrack={\"Text that appears before the audio plays\"}",
 			"/>"
 		]
-	}
+	},
 
+	"Add Guardian streaming video player component to markup": {
+		"prefix": "streaming",
+		"description": "Add Guardian streaming video player component markup",
+		"body": [
+			"<VideoPlayer",
+			"\tsrc={\"coachella-wide\"}",
+			"\tpath={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza\"}",
+			"\tplaceholder={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza/coachella-wide.jpg\"}",
+			"\tsrt={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza/coachella-wide.vtt\"}",
+			"\ttesting={false}",
+		  "/>"
+		]
+	}
 }
