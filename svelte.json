@@ -11,6 +11,17 @@
 			"\tonClick={() => {console.log(`Clicked`)}}",
 			"/>"
 		]
-	}
+	},
 
+	"Add Guardian switch component to markup": {
+		"prefix": "button",
+		"description": "Add Guardian button component markup",
+		"body": [
+			"<Switch"
+			"\tlabel1={\"off\"}",
+			"\tlabel2={\"on\"}",
+			"\ton:change={() => {console.log(\"Switch changed\")}}",
+			"/>"
+		]
+	}
 }
