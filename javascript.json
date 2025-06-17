@@ -292,6 +292,15 @@
 		"body": [
 			"import Button from \"$lib/components/guardian/Button.svelte\";"
 		]
+	},
+
+	"Import Guardian switch component in script": {
+		"prefix": "button",
+		"description": "Import Guardian switch component inside script",
+		"body": [
+			"import Switch from \"$lib/components/guardian/Switch.svelte\";"
+		]
 	}
+
 
 }
