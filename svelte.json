@@ -66,17 +66,17 @@
 		"description": "Add Guardian audio player component markup",
 		"body": [
 			"<AudioPlayer",
-				"\tsrt={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza/hamada-voice-canada.srt\"}",
-				"\tsrc={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza/hamada-voice-canada.mp3\"}",
-				"\tpic={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza/hamada.jpg\"}",
-				"\ttrack={\"Text that appears before the audio plays\"}",
+			"\tsrt={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza/hamada-voice-canada.srt\"}",
+			"\tsrc={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza/hamada-voice-canada.mp3\"}",
+			"\tpic={\"https://interactive.guim.co.uk/embed/aus/2024/07/leaving-gaza/hamada.jpg\"}",
+			"\ttrack={\"Text that appears before the audio plays\"}",
 			"/>"
 		]
 	},
 
 	"Add Guardian streaming video player component to markup": {
 		"prefix": "streaming",
-		"description": "Add Guardian streaming video player component markup",
+		"description": "Add Guardian streaming video player component markup. This component requires the streamingvideo burner script to generate videos in all the required formats",
 		"body": [
 			"<VideoPlayer",
 			"\tsrc={\"coachella-wide\"}",
