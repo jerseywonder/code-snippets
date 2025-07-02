@@ -86,5 +86,23 @@
 			"\ttesting={false}",
 		  "/>"
 		]
+	},
+
+	"Add Pollarama base map component to markup": {
+		"prefix": "basemap",
+		"description": "Add Pollarama base map component markup",
+		"body": [
+			"<BaseMap",
+			"\tsettings={`https://interactive.guim.co.uk/embed/aus/gis-uploads/basemaps/ry9dkay2pc.json`}",
+			"\tlabelsURL={`https://interactive.guim.co.uk/embed/aus/gis-uploads/places.json`}",
+			"\tboundariesURL={`https://interactive.guim.co.uk/embed/aus/gis-uploads/states.json`}",
+			"\timageUrl={`https://interactive.guim.co.uk/embed/aus/gis-uploads/basemaps/ry9dkay2pc.png`}",
+			"\ttopoURL={`https://interactive.guim.co.uk/embed/aus/gis-uploads/data/melbourne.json`}",
+			"\tmargin={100}",
+			"\tVIEWPORT_WIDTH={1080}",
+			"\tVIEWPORT_HEIGHT={720}",
+			"\tuseBaseMapBbox={true}",
+			"/>"
+		]
 	}
 }
